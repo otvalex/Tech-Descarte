@@ -38,8 +38,8 @@ body {
 }
 
 .text1 {
-  position: relative;
   font-size: 30px;
+  position: relative;
   text-align: center;
   display: flexbox;
   margin-top: 5%;
@@ -99,13 +99,19 @@ img {
     align-self: center;
     align-content: center;
   }
+  
+  .text1 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .text1 {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 500px) {
-  .text1 {
-    font-size: 15px;
-    margin-top: 0.5em;
-  }
   .imgs {
     display: grid;
     flex-direction: column;
@@ -116,21 +122,12 @@ img {
     align-self: center;
     align-content: center;
   }
+  
   img {
     height: 300px;
   }
-}
 
-@media (min-height: 900px) {
   .text1 {
     font-size: 15px;
-    margin-top: 4em;
-  }
-}
-
-@media (max-height: 900px) {
-  .text1 {
-    font-size: 12px;
-    margin-top: 4em;
   }
 }

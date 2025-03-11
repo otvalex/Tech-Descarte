@@ -6,6 +6,7 @@
     <title>Locais</title>
     <link rel="stylesheet" href="/css/locais.css">
     <link rel="icon" href="/Imagens/localizacao.png">
+    <script src="/js/locais.js"></script>
 </head>
 <body>
     <div class="menutop">
@@ -14,14 +15,16 @@
 <br>
 <br>
 <div class="lateralbar">
-    <img src="/Imagens/local 1.png" alt="*local1">
+    <img src="/Imagens/local 1.png" class="imglateralbar" alt="*local1" id="img1" onclick="showimg1()">
 </div>
 <div id="informationbar">
-<img id="imginformation" alt="*imagem">
-<h4 id="nameplace">NOME</h3>
-<h4 id="descplace">DESCRIÇÃO</h4>
-<h4 id="hourplace">HORA</h4>
-<h4 id="telplace">TELEFONE</h4>
+    <div class="contentinformation">
+<img id="imginformation" alt="*imagem" type="icon" src="">
+<h4 id="nameplace" class="txtinformation">NOME</h3>
+<h4 id="descplace" class="txtinformation">DESCRIÇÃO</h4>
+<h4 id="hourplace" class="txtinformation">HORA</h4>
+<h4 id="telplace" class="txtinformation">TELEFONE</h4>
+    </div>
 </div>
 </body>
 </html>
