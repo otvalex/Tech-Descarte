@@ -1,54 +1,75 @@
-body{
-    background-image: url('/Imagens/fundo-dengue-2025.jpg');
-    background-attachment:fixed;
-    background-repeat:no-repeat;
-    background-position:center;
-    justify-content: center;
-    justify-self: center;
-    justify-items: center;
-    align-items: center;
-    align-self: center;
-    align-content: center;
-    border-collapse: collapse;
+body {
+  background-image: url("/Imagens/fundo-dengue-2025.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  border-collapse: collapse;
 }
 
-.menutop{
-    border-collapse: collapse;
-    box-shadow: black 1px 2px 10px;
-    position: fixed;
-    background-color: green;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 8%;
-    text-align: center;
-    display: inline;
-    align-content: center;
-    opacity: 80%;
-    z-index: 1;
+.menutop {
+  border-collapse: collapse;
+  box-shadow: black 1px 2px 10px;
+  position: fixed;
+  background-color: green;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8%;
+  text-align: center;
+  display: inline;
+  align-content: center;
+  opacity: 80%;
+  z-index: 1;
 }
 
-.textmenu{
-    display: inline;
-    margin: 20px;
-    text-decoration: none; 
-    color: aliceblue;
-    text-shadow: black 1px 1px 1px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+.textmenu {
+  display: inline;
+  margin: 20px;
+  text-decoration: none;
+  color: aliceblue;
+  text-shadow: black 1px 1px 1px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.text1{
-    margin-top: 5%;
-    font-size: 25px;
-    opacity: 80%;
-    position: relative;
-    text-align: center;
-    color: aliceblue;
-    text-shadow: black 1px 1px 1px;
-    font-family: Arial, Helvetica, sans-serif;
+.text1 {
+  position: relative;
+  font-size: 30px;
+  text-align: center;
+  display: flexbox;
+  margin-top: 5%;
+  color: aliceblue;
+  text-shadow: black 1px 1px 1px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.imgs{
+.imgs {
+  display: flexbox;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
+
+img {
+  justify-self: center;
+  margin: 1px;
+  position: relative;
+  height: 400px;
+  cursor: default;
+  box-shadow: #00000090 5px 5px 5px;
+  z-index: -1;
+}
+
+@media (min-width: 1500px) {
+  .imgs {
     display: flexbox;
     justify-content: center;
     justify-self: center;
@@ -56,60 +77,60 @@ body{
     align-items: center;
     align-self: center;
     align-content: center;
-}
-
-img{
+  }
+  img {
     justify-self: center;
     margin: 1px;
     position: relative;
     height: 400px;
     cursor: default;
     z-index: -1;
+  }
 }
 
-@media (max-width: 1500px){
-    .imgs{
-        display:grid;
-        flex-direction: column;
-        justify-content: center;
-        justify-self: center;
-        justify-items: center;
-        align-items: center;
-        align-self: center;
-        align-content: center;
-    }
+@media (max-width: 1500px) {
+  .imgs {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+  }
 }
 
-@media (min-height: 900px){
-    .text1{
-        padding-top: 4em;
-        font-size: 15px;
-    }
+@media (max-width: 500px) {
+  .text1 {
+    font-size: 15px;
+    margin-top: 0.5em;
+  }
+  .imgs {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+  }
+  img {
+    height: 300px;
+  }
 }
 
-@media (max-width: 500px){
-    .text1{
-        padding-top: 3em;
-        font-size: 15px;
-    }
-    .imgs{
-        display:grid;
-        flex-direction: column;
-        justify-content: center;
-        justify-self: center;
-        justify-items: center;
-        align-items: center;
-        align-self: center;
-        align-content: center;
-    }
-    img{
-        height: 300px;
-    }
+@media (min-height: 900px) {
+  .text1 {
+    font-size: 15px;
+    margin-top: 4em;
+  }
 }
 
-@media (min-height: 900px){
-    .text1{
-        padding-top: 4em;
-        font-size: 15px;
-    }
+@media (max-height: 900px) {
+  .text1 {
+    font-size: 12px;
+    margin-top: 4em;
+  }
 }
